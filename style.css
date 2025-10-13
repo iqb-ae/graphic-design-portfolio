@@ -281,31 +281,38 @@ section h2 {
     padding: 0 5px; /* Sedikit spasi di kiri dan kanan */
 }
 
-/* ============================================= */
-/* STYLE UNTUK POSTER DESIGN (2 KOLOM) */
-/* ============================================= */
+/* ================================================= */
+/* STYLE UNTUK POSTER DESIGN (REVISI GRID 2x2) */
+/* ================================================= */
 
-.poster-grid {
+.poster-image-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Membuat 2 kolom dengan lebar sama */
-    gap: 40px; /* Jarak antara kolom kiri dan kanan */
-    align-items: start; /* Membuat bagian atas kolom sejajar */
+    grid-template-columns: 1fr 1fr; /* Membuat 2 kolom */
+    gap: 20px; /* Jarak antar gambar */
+    margin-bottom: 30px;
 }
 
-.poster-column img {
+.poster-image-grid img {
     width: 100%;
+    aspect-ratio: 1 / 1; /* MEMAKSA GAMBAR MENJADI PERSEGI (RATIO 1:1) */
+    object-fit: cover; /* Memastikan gambar mengisi kotak tanpa distorsi */
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
 }
 
-.poster-column .poster-meta {
-    text-align: left; /* Membuat meta info rata kiri */
+.poster-description-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.poster-text-block .poster-meta {
+    text-align: left;
     margin-bottom: 15px;
 }
 
-.poster-column p {
-    text-align: left; /* Membuat paragraf rata kiri */
+.poster-text-block p {
+    text-align: left;
     font-size: 0.95rem;
     color: #555;
     line-height: 1.6;
@@ -313,7 +320,8 @@ section h2 {
 
 /* Responsive untuk layar HP */
 @media (max-width: 768px) {
-    .poster-grid {
-        grid-template-columns: 1fr; /* Mengubah layout menjadi 1 kolom */
+    .poster-image-grid, .poster-description-group {
+        grid-template-columns: 1fr; /* Mengubah semua layout menjadi 1 kolom */
+        gap: 20px;
     }
 }
