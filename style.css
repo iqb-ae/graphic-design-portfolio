@@ -282,20 +282,20 @@ section h2 {
 }
 
 /* ================================================= */
-/* STYLE UNTUK POSTER DESIGN (REVISI GRID 2x2) */
+/* STYLE UNTUK POSTER DESIGN (4 KOLOM SEJAJAR) */
 /* ================================================= */
 
-.poster-image-grid {
+.poster-grid-4-columns {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Membuat 2 kolom */
-    gap: 20px; /* Jarak antar gambar */
+    grid-template-columns: repeat(4, 1fr); /* INI KUNCINYA: Membuat 4 kolom sejajar */
+    gap: 20px;
     margin-bottom: 30px;
 }
 
-.poster-image-grid img {
+.poster-grid-4-columns img {
     width: 100%;
-    aspect-ratio: 1 / 1; /* MEMAKSA GAMBAR MENJADI PERSEGI (RATIO 1:1) */
-    object-fit: cover; /* Memastikan gambar mengisi kotak tanpa distorsi */
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
@@ -304,6 +304,7 @@ section h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    margin-top: 20px;
 }
 
 .poster-text-block .poster-meta {
@@ -318,10 +319,15 @@ section h2 {
     line-height: 1.6;
 }
 
-/* Responsive untuk layar HP */
-@media (max-width: 768px) {
-    .poster-image-grid, .poster-description-group {
-        grid-template-columns: 1fr; /* Mengubah semua layout menjadi 1 kolom */
-        gap: 20px;
+/* Responsive agar tidak rusak di layar kecil */
+@media (max-width: 992px) { /* Untuk Tablet */
+    .poster-grid-4-columns {
+        grid-template-columns: repeat(2, 1fr); /* Jadi 2x2 grid */
+    }
+}
+
+@media (max-width: 768px) { /* Untuk HP */
+    .poster-description-group {
+        grid-template-columns: 1fr; /* Jadi 1 kolom */
     }
 }
