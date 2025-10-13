@@ -280,3 +280,40 @@ section h2 {
     margin-top: 15px; /* Jarak dari gambar di atasnya */
     padding: 0 5px; /* Sedikit spasi di kiri dan kanan */
 }
+
+/* ============================================= */
+/* STYLE UNTUK POSTER DESIGN (2 KOLOM) */
+/* ============================================= */
+
+.poster-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Membuat 2 kolom dengan lebar sama */
+    gap: 40px; /* Jarak antara kolom kiri dan kanan */
+    align-items: start; /* Membuat bagian atas kolom sejajar */
+}
+
+.poster-column img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.poster-column .poster-meta {
+    text-align: left; /* Membuat meta info rata kiri */
+    margin-bottom: 15px;
+}
+
+.poster-column p {
+    text-align: left; /* Membuat paragraf rata kiri */
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive untuk layar HP */
+@media (max-width: 768px) {
+    .poster-grid {
+        grid-template-columns: 1fr; /* Mengubah layout menjadi 1 kolom */
+    }
+}
