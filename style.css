@@ -274,3 +274,11 @@ section h2 {
     margin: 40px auto 0 auto; /* Jarak atas ditambah, kiri-kanan auto */
     line-height: 1.7; /* Jarak antar baris disesuaikan */
 }
+
+/* Style untuk deskripsi kecil di bawah gambar proses */
+.step-description {
+    font-size: 0.9rem; /* Ukuran font sedikit lebih kecil */
+    color: #666; /* Warna abu-abu agar tidak terlalu menonjol */
+    margin-top: 15px; /* Jarak dari gambar di atasnya */
+    padding: 0 5px; /* Sedikit spasi di kiri dan kanan */
+}
