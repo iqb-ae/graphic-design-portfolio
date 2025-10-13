@@ -193,3 +193,78 @@ section h2 {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* ============================================= */
+/* STYLE UNTUK PROJECT DETAIL          */
+/* ============================================= */
+
+/* Import Font Tulisan Tangan dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+.project-showcase {
+    width: 100%;
+}
+
+.project-detail {
+    margin-bottom: 80px; /* Jarak antar proyek jika ada lebih dari satu */
+}
+
+.project-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.project-meta {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.project-meta p {
+    display: inline-block; /* Membuat 'Year' dan 'Apps' sejajar */
+    margin: 0 15px;
+}
+
+.project-layout-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.project-step {
+    text-align: center;
+}
+
+.project-step h4 {
+    font-family: 'Caveat', cursive; /* Menggunakan font tulisan tangan */
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project-step img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.print-design-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.project-description {
+    font-family: 'Caveat', cursive; /* Menggunakan font tulisan tangan */
+    text-align: center;
+    font-size: 1.6rem;
+    color: #444;
+    max-width: 800px;
+    margin: 20px auto 0 auto; /* (atas, kanan-kiri auto, bawah, kiri-kanan auto) */
+    line-height: 1.5;
+}
