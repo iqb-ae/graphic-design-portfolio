@@ -198,8 +198,6 @@ section h2 {
 /* STYLE UNTUK PROJECT DETAIL          */
 /* ============================================= */
 
-/* Import Font Tulisan Tangan dari Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 .project-showcase {
     width: 100%;
@@ -240,10 +238,12 @@ section h2 {
 }
 
 .project-step h4 {
-    font-family: 'Caveat', cursive; /* Menggunakan font tulisan tangan */
-    font-size: 1.5rem;
+    font-size: 1.1rem; /* Ukuran font dikecilkan */
+    font-weight: 600; /* Dibuat sedikit tebal */
     color: #555;
     margin-bottom: 15px;
+    text-transform: uppercase; /* Membuatnya jadi huruf kapital agar rapi */
+    letter-spacing: 1px; /* Jarak antar huruf */
 }
 
 .project-step img {
@@ -260,11 +260,10 @@ section h2 {
 }
 
 .project-description {
-    font-family: 'Caveat', cursive; /* Menggunakan font tulisan tangan */
-    text-align: center;
-    font-size: 1.6rem;
+    text-align: left; /* Alignment diubah ke kiri agar lebih mudah dibaca */
+    font-size: 1rem; /* Ukuran font normal untuk paragraf */
     color: #444;
     max-width: 800px;
-    margin: 20px auto 0 auto; /* (atas, kanan-kiri auto, bawah, kiri-kanan auto) */
-    line-height: 1.5;
+    margin: 40px auto 0 auto; /* Jarak atas ditambah, kiri-kanan auto */
+    line-height: 1.7; /* Jarak antar baris disesuaikan */
 }
