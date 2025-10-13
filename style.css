@@ -201,13 +201,14 @@ section h2 {
 }
 
 .project-detail {
-    margin-bottom: 120px; /* Jarak antar proyek jika ada lebih dari satu */
+
 }
 
 .project-title {
     text-align: center;
-    font-size: 2.2rem; /* Ukuran font diperkecil */
-    font-weight: 600;  /* Dibuat sedikit lebih tipis dari h2 */
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-top: 80px; /* Memberi jarak atas 80px */
     margin-bottom: 10px;
     color: var(--secondary-color);
 }
@@ -264,12 +265,12 @@ section h2 {
 }
 
 .project-description {
-    text-align: left; /* Alignment diubah ke kiri agar lebih mudah dibaca */
-    font-size: 1rem; /* Ukuran font normal untuk paragraf */
+    text-align: left;
+    font-size: 1rem;
     color: #444;
     max-width: 800px;
-    margin: 40px auto 0 auto; /* Jarak atas ditambah, kiri-kanan auto */
-    line-height: 1.7; /* Jarak antar baris disesuaikan */
+    margin: 40px auto 60px auto; /* Memberi jarak bawah 60px */
+    line-height: 1.7;
 }
 
 /* Style untuk deskripsi kecil di bawah gambar proses */
