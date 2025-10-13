@@ -35,7 +35,7 @@ body {
 }
 
 section {
-    padding: 60px 0;
+    padding: 100px 0; /* Nilai diperbesar agar jarak lebih lega */
 }
 
 section h2 {
