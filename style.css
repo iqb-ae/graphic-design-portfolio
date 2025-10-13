@@ -40,9 +40,9 @@ section {
 
 section h2 {
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-    font-weight: 600;
+    margin-bottom: 60px; /* Jarak ke bawah sedikit ditambah */
+    font-size: 3rem;   /* Ukuran font diperbesar */
+    font-weight: 700;  /* Dibuat lebih tebal */
     color: var(--secondary-color);
 }
 
@@ -91,12 +91,9 @@ section h2 {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     background-color: var(--light-gray);
+    padding: 150px 0; /* Memberi jarak atas-bawah yang lega tapi tidak berlebihan */
 }
 
 .hero-content h1 {
@@ -209,8 +206,8 @@ section h2 {
 
 .project-title {
     text-align: center;
-    font-size: 2.8rem;
-    font-weight: 700;
+    font-size: 2.2rem; /* Ukuran font diperkecil */
+    font-weight: 600;  /* Dibuat sedikit lebih tipis dari h2 */
     margin-bottom: 10px;
     color: var(--secondary-color);
 }
